@@ -1,0 +1,14 @@
+Pdf/
+Save/
+Sections/*.tex~
+Txt/*.txt~
+*.log
+*.aux
+*.nav
+*.out
+*.snm
+*.tex~
+*.sty~
+*.toc
+*.pdf
+.gitignore~

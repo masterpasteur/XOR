@@ -1,0 +1,61 @@
+\usepackage[frenchb]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+%Mise en page
+\usepackage{beamerarticle}
+	\newcommand{\insertsection}{}
+	\newcommand{\insertsubsection}{}
+	\newcommand{\insertsubsubsection}{}
+%\usepackage{libertine}
+%\def\sectionFrame{\huge{\textbf{\thesection. \insertsection}}}
+\def\sectionFrame{}
+\def\nom{\textsc}
+\usepackage{xspace}
+\newcommand{\ofg}[1]{\og{}#1\fg{}}
+    
+%Multimédia
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{tikz}
+\usepackage{media9}
+\usepackage{hyperref}
+
+\usepackage{xcolor}
+    \def\ortho{\textcolor{red}{(?)}}
+    \def\inct{\textcolor{blue}{[?]}}
+    
+\newcommand{\cast}[1]{\textcolor{blue}{#1}}
+\newcommand{\dida}[1]{\texttt{[#1]}}
+\newcommand{\repItem}[2]{\item \textcolor{blue}{\textsf{#1}} : \textrm{#2}}
+    %CN: itemize
+\def\nom{\textsc}
+
+%Correction
+\usepackage{xcolor}
+    \def\ortho{\textcolor{red}{(?)}}
+    \def\inct{\textcolor{blue}{[?]}}
+    \def\pert{\textcolor{gray}{\{?\}}}
+    \def\info{\textcolor{green}{:?:}}
+    \def\strg{\textcolor{red}{?!}}
+    %\def\crit{\textcolor{blue}{[!]}} %Attention: conflit
+\newcommand{\non}[1]{\textcolor{gray}{#1}}
+\newcommand{\todo}[1]{\textcolor{blue}{\textbf{#1}}}
+\newcommand{\moveto}[1]{\textcolor{blue}{\to} #1}
+\newcommand{\ordre}[1]{\textcolor{blue}{\textsl{#1}}}
+
+%\usepackage[a5paper%,
+    %left=1cm, right=1cm,
+    %top=2cm, bottom=2cm
+%    ]{geometry}   
+%\usepackage{libertine}
+
+\newcommand{\type}[1]{\textcolor{blue}{[#1]}}
+\def\histoire{\type{Histoire}}
+\def\mes{\type{Mise en scène}}
+\def\humour{\type{Humour}}
+\def\drama{\type{Dramatique}}
+\def\evang{\type{Evangélisation}}
+\def\perso{\textbf}
+\def\off{\textit}
+\usepackage{textcomp}
