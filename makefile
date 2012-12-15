@@ -8,4 +8,4 @@ $(PDF):sketch.sty Sections/dialogues_intro.tex Sections/dialogues_disc.tex \
 	$(LTX) xor.tex
 
 clean:
-	rm *.aux *.log *.out *.pdf *.snm *.toc
+	rm *.aux *.log *.out *.pdf *.toc
