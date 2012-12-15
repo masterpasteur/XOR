@@ -1,9 +1,9 @@
-PDF=xor_proj.pdf
+PDF=xor.pdf
 
 all:$(PDF)
 
-$(PDF):xor_proj.tex
-	pdflatex xor_proj.tex
+$(PDF):xor.tex
+	pdflatex xor.tex
 
 clean:
 	rm *.aux *.log *.nav *.out *.pdf *.snm *.toc

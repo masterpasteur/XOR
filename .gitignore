@@ -7,8 +7,7 @@ Txt/*.txt~
 *.nav
 *.out
 *.snm
-*.tex~
-*.sty~
+*~
 *.toc
 *.pdf
 .gitignore~
