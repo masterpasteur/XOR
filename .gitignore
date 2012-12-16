@@ -1,4 +1,5 @@
 Sections/*.tex~
+Figures
 *.log
 *.aux
 *.out
