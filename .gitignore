@@ -1,5 +1,5 @@
 Sections/*.tex~
-Figures
+Figures/*.pdf
 *.log
 *.aux
 *.out

@@ -6,21 +6,13 @@ all:$(PDF)
 
 # ---------------------------------------------------------
 
-logoEEL11.svg:
-	cp Figures/logoEEL11.svg .
-
-logoEEL11.pdf: logoEEL11.svg
-	$(VEC) -f pdf -o logoEEL11.pdf logoEEL11.svg
+logoEEL11.pdf: Figures/logoEEL11.svg
+	$(VEC) -f pdf -o logoEEL11.pdf Figures/logoEEL11.svg
 	mv logoEEL11.pdf Figures
-	rm logoEEL11.svg
 	
-xor_Venn.svg:
-	cp Figures/xor_Venn.svg .
-	
-xor_Venn.pdf: xor_Venn.svg
-	$(VEC) -f pdf -o xor_Venn.pdf xor_Venn.svg
+xor_Venn.pdf: Figures/xor_Venn.svg
+	$(VEC) -f pdf -o xor_Venn.pdf Figures/xor_Venn.svg
 	mv xor_Venn.pdf Figures
-	rm xor_Venn.svg
 	
 # ---------------------------------------------------------
 
