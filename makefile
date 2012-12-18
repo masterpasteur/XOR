@@ -7,12 +7,7 @@ all:$(PDF)
 # ---------------------------------------------------------
 
 Figures/logoEEL11.pdf: Figures/logoEEL11.svg
-	$(VEC) -f pdf -o logoEEL11.pdf Figures/logoEEL11.svg
-	mv logoEEL11.pdf Figures
-	
-Figures/xor_Venn.pdf: Figures/xor_Venn.svg
-	$(VEC) -f pdf -o xor_Venn.pdf Figures/xor_Venn.svg
-	mv xor_Venn.pdf Figures
+	$(VEC) -f pdf -o Figures/logoEEL11.pdf Figures/logoEEL11.svg
 	
 # ---------------------------------------------------------
 
@@ -23,8 +18,7 @@ $(PDF): sketch.sty \
 	Sections/dialogues_evang.tex \
 	Sections/insp.tex \
 	xor.tex \
-	Figures/logoEEL11.pdf \
-	Figures/xor_Venn.pdf
+	Figures/logoEEL11.pdf
 	$(LTX) xor.tex
 
 clean:
