@@ -1,15 +1,7 @@
 LTX=pdflatex
-VEC=rsvg-convert
 PDF=xor.pdf
 
 all:$(PDF)
-
-# ---------------------------------------------------------
-
-Figures/logoEEL11.pdf: Figures/logoEEL11.svg
-	$(VEC) -f pdf -o Figures/logoEEL11.pdf Figures/logoEEL11.svg
-	
-# ---------------------------------------------------------
 
 $(PDF): sketch.sty \
 	Sections/prep.tex \
@@ -25,4 +17,4 @@ clean:
 	rm -f *.aux *.log *.out *.toc
 	
 mrproper: clean
-	rm -f *.pdf Figures/*.pdf
+	rm -f *.pdf
